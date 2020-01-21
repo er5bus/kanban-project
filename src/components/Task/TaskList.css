@@ -1,0 +1,28 @@
+.new-task-form {
+  margin-bottom: 10px;
+}
+
+.task-list {
+  max-width: 19.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  flex: 1 0 auto;
+  width: calc(100vw - 24px);
+  max-height: 100%;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+  outline: none !important;
+  margin-bottom: 0.75rem;
+  margin-right: 0.75rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: #dee2e6;
+}
+
+.tasks-header {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: right;
+}

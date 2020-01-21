@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+
+  kanban:
+    build: .
+    volumes:
+      - ./public:/app/public
+      - ./src:/app/src
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+
+  kanban-api:
+    image: sfari/kanban-api
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_CONFIG=production
+      - FLASK_ENV=PROD
+      - MIGRATE_DB=1
+    volumes:
+      - ./data:/data:rw
+

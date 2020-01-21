@@ -1,0 +1,18 @@
+.tasks {
+  flex: 1;
+  white-space: nowrap;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.task-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.task-new {
+  padding-bottom: 2rem;
+}
